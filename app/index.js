@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 // Static and routes
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(require('../app/controllers'));
 
 // 404 handler
